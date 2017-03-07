@@ -1,4 +1,4 @@
-# Gilded Rose Tech Test
+# Gilded Rose Tech Test ![Travis CI](https://travis-ci.org/sliute/GildedRose-Refactoring-Kata.svg?branch=master)
 
 This repo is forked from [here](https://github.com/emilybache/GildedRose-Refactoring-Kata). I worked on its __JavaScript__ version.
 
