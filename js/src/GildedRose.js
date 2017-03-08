@@ -7,20 +7,16 @@ class Item {
 }
 
 class Shop {
-  constructor(items=[]){
+  constructor(items = []){
     this.items = items;
   }
   updateQuality() {
-    for (var i = 0; i < this.items.length; i++) {
-      var item = this.items[i];
+    function date(item) {
+      if (item.name != 'Sulfuras, Hand of Ragnaros') { item.sellIn -= 1; }
+    }
 
-      if (item.name === 'Sulfuras, Hand of Ragnaros') { continue; }
-
-      item.sellIn -= 1;
-
-      if (item.name === 'Aged Brie') {
-        item.quality += 1;
-      }
+    function quality(item) {
+      if (item.name === 'Aged Brie') { item.quality += 1; }
 
       if (item.name === 'Backstage passes to a TAFKAL80ETC concert') {
         if (item.sellIn < 0) {
@@ -50,13 +46,16 @@ class Shop {
         }
       }
 
-      if (item.quality > 50) {
-        item.quality = 50;
-      }
+      if (item.quality > 50) { item.quality = 50; }
+      if (item.quality < 0) { item.quality = 0; }
 
-      if (item.quality < 0) {
-        item.quality = 0;
-      }
+      if (item.name === 'Sulfuras, Hand of Ragnaros') { item.quality = 80; }
+    }
+
+    for (var i = 0; i < this.items.length; i++) {
+      var item = this.items[i];
+      date(item);
+      quality(item);
     }
 
     return this.items;
