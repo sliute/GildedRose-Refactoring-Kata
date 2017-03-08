@@ -26,7 +26,7 @@ describe("Gilded Rose", function() {
     ]);
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toEqual(21);
-    expect(items[1].quality).toEqual(22);
+    expect(items[1].quality).toEqual(21);
   });
 
   it ("should never have item quality rise above 50", function() {
