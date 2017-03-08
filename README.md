@@ -17,3 +17,4 @@ You'll want to look at the ["Gilded Rose Requirements"](https://github.com/emily
 
 * Written test suite for all above requirements.
 * TDD-ed the introduction of 'Conjured' items, without refactoring the existing codebase (only added minimal amount of code to it).
+* Refactored the existing codebase for clarity, ease of maintenance and updating.
