@@ -10,6 +10,7 @@ This Kata was originally created by Terry Hughes (http://twitter.com/#!/TerryHug
 $ git clone https://github.com/sliute/GildedRose-Refactoring-Kata.git
 $ cd GildedRose-Refactoring-Kata/js
 $ open SpecRunner.html
+$ open TexttestFixture.html
 ```
 You'll want to look at the ["Gilded Rose Requirements"](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/GildedRoseRequirements.txt), which explain what the code is for.
 
